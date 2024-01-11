@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <>
             <Layout pageName={pageName}>
-                <Draggable>
+                {/* <Draggable>
                     <Card className="app-window-modal">
                         <CardHeader className="app-window-header">
                             <Row className="w-100 align-items-center app-header-p">
@@ -42,7 +42,7 @@ const Home = () => {
                             </Button>
                         </CardFooter>
                     </Card>
-                </Draggable>
+                </Draggable> */}
             </Layout>
         </>
     );
