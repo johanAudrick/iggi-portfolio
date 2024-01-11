@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/iggi-portfolio/static/css/main.14c5cf03.css",
+    "main.js": "/iggi-portfolio/static/js/main.ceda3802.js",
+    "static/media/reach-me.png": "/iggi-portfolio/static/media/reach-me.11d7e6bcefa3f5edd57c.png",
+    "static/media/skills-i-own.png": "/iggi-portfolio/static/media/skills-i-own.7b5705accbec3da5ef99.png",
+    "static/media/works-i-did.png": "/iggi-portfolio/static/media/works-i-did.e67d4ef32f5994aa50b7.png",
+    "static/media/who-am-i.png": "/iggi-portfolio/static/media/who-am-i.b22186089a41b0a48a1d.png",
+    "static/media/home-bg.jpg": "/iggi-portfolio/static/media/home-bg.5a9b0ef74e8cf78f465a.jpg",
+    "static/media/logo-sm.png": "/iggi-portfolio/static/media/logo-sm.d5e34e6f137b459c22a3.png",
+    "index.html": "/iggi-portfolio/index.html",
+    "main.14c5cf03.css.map": "/iggi-portfolio/static/css/main.14c5cf03.css.map",
+    "main.ceda3802.js.map": "/iggi-portfolio/static/js/main.ceda3802.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14c5cf03.css",
+    "static/js/main.ceda3802.js"
+  ]
+}
