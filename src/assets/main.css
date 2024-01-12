@@ -1,5 +1,37 @@
+/*
+Font Imports
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Instrument+Serif&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&display=swap');
+
 body {
     overflow: hidden !important;
+}
+
+.ff-caveat {
+    font-family: 'Caveat', cursive;
+}
+
+.ff-comfortaa {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.ff-instrument-serif {
+    font-family: 'Instrument Serif', serif;
+}
+
+.ff-quicksand {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.ff-oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.ff-inconsolata {
+    font-family: 'Inconsolata', monospace;
 }
 
 .wrapper {
@@ -10,6 +42,103 @@ body {
     background: url("/src/assets/img/home-bg.jpg") no-repeat center center fixed;
     background-size: cover;
     padding: 0px !important;
+}
+
+.bg-lavendar-abstract {
+    background-color: #ab8cf56e !important;
+    backdrop-filter: blur(10px);
+    background: url("/src/assets/img/bg-abstract-1.png  ") no-repeat center center fixed;
+}
+
+.bg-light-abstract {
+    background-color: #ffffff4d !important;
+    backdrop-filter: blur(10px);
+    background: url("/src/assets/img/bg-abstract-1.png  ") no-repeat center center fixed;
+}
+
+.bg-pink {
+    background-color: #FEBBD4;
+}
+
+.bg-yellow {
+    background-color: #FDBF45;
+}
+
+.bg-light {
+    background-color: #FFFFFF;
+}
+
+.bg-grey {
+    background-color: #E5E5DD;
+}
+
+.bg-green {
+    background-color: #005E42;
+}
+
+.bg-orange {
+    background-color: #EB5A35;
+}
+
+.bg-blue {
+    background-color: #4085E7;
+}
+
+.bg-lavendar {
+    background-color: #D3C1D7;
+}
+
+
+.bg-grade-pink {
+    background: linear-gradient(to top, #FEBBD4, transparent);
+}
+
+.bg-grade-yellow {
+    background: linear-gradient(to top, #FDBF45, transparent);
+}
+
+.bg-grade-light {
+    background: linear-gradient(to top, #FFFFFF, transparent);
+}
+
+.bg-grade-grey {
+    background: linear-gradient(to top, #E5E5DD, transparent);
+}
+
+.bg-grade-green {
+    background: linear-gradient(to top, #005E42, transparent);
+}
+
+.bg-grade-orange {
+    background: linear-gradient(to top, #EB5A35, transparent);
+}
+
+.bg-grade-blue {
+    background: linear-gradient(to top, #4085E7, transparent);
+}
+
+.bg-grade-lavendar {
+    background: linear-gradient(to top, #D3C1D7, transparent);
+}
+
+.bg-blue-prime {
+    background-color: #845EC2;
+}
+
+.bg-blue-secondary {
+    background-color: #B39CD0;
+}
+
+.bg-blue-tint {
+    background-color: #FBEAFF;
+}
+
+.bg-blue-shade {
+    background-color: #00C9A7;
+}
+
+.h-75 {
+    height: 75% !important;
 }
 
 .app-drawer-container {
@@ -75,8 +204,52 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     padding: 0px 30px 0 30px;
 }
+
 .top-bar-date {
     font-weight: 500;
+}
+
+/*
+MacOs App Window - Card
+ */
+
+.app-card {
+    width: 70vw;
+    height: 70vh;
+    background-color: #1c2121;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    border: none;
+}
+
+.app-card-header {
+    height: 35px;
+    background-color: #343638;
+    border: none;
+    width: 100%;
+}
+
+.app-card-footer {
+    background-color: #333132;
+    padding: 6px 10px;
+    border: none;
+    width: 100%;
+}
+
+.app-card {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.app-card.show {
+    opacity: 1;
+}
+
+.app-card-logo {
+    height: 150px;
 }
 
 /* App Window Css */
@@ -91,7 +264,7 @@ body {
 }
 
 .app-window-header {
-    height : 20px;
+    height: 20px;
     background-color: #343638;
     border: none;
 }
@@ -99,11 +272,13 @@ body {
 .app-header-p {
     padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .modal {
     opacity: 0;
-    transform: scale(0.2)  translate(-50vw, 200vh);
+    transform: scale(0.2) translate(-50vw, 200vh);
     transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
@@ -127,9 +302,10 @@ body {
     padding: 3px 10px;
     border: none;
 }
+
 .circle-btn {
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 13px;
     font-size: 8px;
     border-radius: 50%;
     display: flex;

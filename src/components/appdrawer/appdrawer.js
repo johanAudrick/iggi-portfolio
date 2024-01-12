@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Col, Container, OverlayTrigger, Popover, PopoverBody, Row} from "react-bootstrap";
 
 // App Icons
@@ -7,27 +7,22 @@ import SkillsIOwn from "../../assets/img/skills-i-own.png";
 import WorksIDid from "../../assets/img/works-i-did.png";
 import ReachMe from "../../assets/img/reach-me.png";
 
-import AppWindow from "../appwindow/appwindow";
+import WhoAmICard from "../whoamicard/whoamicard";
 
 const AppDrawer = () => {
+    const [isWhoAmIOpen, setIsWhoAmIOpen] = useState(false);
 
-    const [showModal, setShowModal] = useState(false);
-
-    const handleShow = () => {
-        setShowModal(true);
+    const toggleWhoAmI = () => {
+        setIsWhoAmIOpen(!isWhoAmIOpen);
     };
 
-    const handleClose = () => {
-        setShowModal(false);
-    }
-
+    useEffect(()=> {
+        console.log(isWhoAmIOpen)
+    }, [isWhoAmIOpen])
 
     return (
         <>
-            <AppWindow showState={showModal} closeState={handleClose}>
-                <h1 className="text-light">This is Sample</h1>
-            </AppWindow>
-
+            <WhoAmICard onClose={toggleWhoAmI} isView={isWhoAmIOpen} />
             <Container fluid className="app-drawer-container">
                 <Row className="app-drawer">
                     <Col className="app-logo app-logo-title-right left">
@@ -37,7 +32,7 @@ const AppDrawer = () => {
                                 Who Am I?
                             </PopoverBody>
                         </Popover>} >
-                            <img src={WhoAmI} alt="Left Logo" onClick={handleShow}/>
+                            <img src={WhoAmI} alt="Left Logo" onClick={toggleWhoAmI}/>
                         </OverlayTrigger>
 
                     </Col>
