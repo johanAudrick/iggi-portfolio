@@ -22,10 +22,10 @@ const TopBar = () => {
         <>
             <Container fluid className="top-bar">
                 <Row className="d-flex">
-                    <Col xs="auto" className="mr-auto pt-1">
+                    <Col xs="auto" className="mr-auto logo-col">
                         <Link to={"/"}><img src={LogoMin} className="min-logo"/></Link>
                     </Col>
-                    <Col xs="auto" className="ms-auto pt-2">
+                    <Col xs="auto" className="ms-auto pt-1">
                         <p className="top-bar-date">{currentDay} {' '} {currentTime}</p>
                     </Col>
                 </Row>

@@ -8,16 +8,16 @@ const AppWindowTwo = ({children, onClose, isView, title, logo, cardColor}) => {
         <>
             <Draggable handle=".app-card-header">
                 <Card className={`app-card me-auto ms-auto ${isView ? "show" : "hide"} ${cardColor}`}>
-                    <CardBody className="h-100 w-100 p-0 position-relative">
-                        <CardHeader className="app-card-header bg-transparent position-absolute">
+                    <CardBody className="h-100 w-100 pt-0 pe-0 px-0 pb-4 position-relative">
+                        <CardHeader className="app-card-header bg-transparent position-absolute p-0">
                             <Row className="w-100 app-header-p">
                                 <Col className="d-flex pt-3">
-                                    <Button className="circle-btn close-btn me-2" onClick={onClose}>
+                                    <Button className="circle-btn bg-red-close me-2" onClick={onClose}>
                                     </Button>
-                                    <Button className="circle-btn minimize-btn me-2">
+                                    <Button className="circle-btn bg-yellow-min me-2">
                                         {' '}
                                     </Button>
-                                    <Button className="circle-btn maximize-btn">
+                                    <Button className="circle-btn bg-green-max">
                                         {' '}
                                     </Button>
                                 </Col>

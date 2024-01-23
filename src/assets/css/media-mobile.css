@@ -1,0 +1,139 @@
+@media only screen and (max-width: 600px) {
+/*
+    Font Styles
+ */
+
+/* Font Size */
+
+    .fs-card-text{
+        font-size: 1.2rem;
+    }
+
+    .fs-2r{
+        font-size: 2rem;
+    }
+
+/*
+    Font Styles Ends
+ */
+
+/*
+    Margin Styles
+ */
+
+    .mt-xs-2 {
+        margin-top: 2rem;
+    }
+
+/*
+    Margin Styles Ends
+ */
+
+/*
+    Top Bar Styles
+ */
+
+    .top-bar {
+        height: 2.3rem;
+    }
+
+    .logo-col {
+        padding-top: 0.25rem;
+    }
+
+    .min-logo {
+        height: 25px;
+        width: auto;
+    }
+
+    .top-bar-date {
+        font-weight: 600;
+        font-size: 1rem;
+        padding-top: 0.25rem;
+    }
+
+/*
+    Top Bar Styles Ends
+ */
+
+/*
+    App Drawer Styles
+ */
+
+    .app-drawer-container {
+        width: 90vw;
+    }
+
+/*
+    App Drawer Styles Ends
+ */
+
+/*
+    App Window - Card Styles
+*/
+    .app-card {
+        width: 90vw;
+        height: 75vh;
+    }
+
+    .app-card-logo {
+        height: 3rem;
+        padding-top: 0.5rem;
+    }
+
+    .circle-btn {
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+
+    .app-card-body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+/*
+    App Window - Card Styles Ends
+*/
+
+/*
+    Who Am I Cards Styles
+*/
+
+    .text-hover-hide {
+        font-size: 2rem;
+    }
+
+    .mini-fade-logos {
+        padding: 20px;
+    }
+
+    .mini-fade-logos img {
+        height: 4rem;
+    }
+
+    /* Resume */
+
+    .resume button {
+        min-height: 2rem;
+        font-size: 0.8rem;
+    }
+
+    .resume:hover .resume-avatar img {
+        transform: translateY(0.5rem) translateX(8rem) scale(1.5)
+    }
+
+    .download {
+        width: 7rem;
+    }
+
+    .download span:after,
+    .download span:before {
+        height: 0.4rem;
+    }
+
+    .download:hover {
+        padding: 16px 0;
+    }
+/*
+    Who Am I Cards Styles Ends
+*/
+}
